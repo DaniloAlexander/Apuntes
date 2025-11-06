@@ -1,24 +1,25 @@
+Lección 1:
 1. Los operadores de comparación (o también denominados operadores relacionales) se utilizan para comparar valores. La siguiente tabla ilustra cómo funcionan los operadores de comparación, asumiendo que
-	   x = 0,   y = 1,   y   z = 0:
+	   **x = 0,   y = 1,   y   z = 0:**
 
-| Operador | Descripción | Ejemplo                                                   |
-| -------- | ----------- | --------------------------------------------------------- |
-| ==       |             | x == y    # False<br>x == z    # True                     |
-| !=       |             | x != y    # True<br>x != z    # False                     |
-| >        |             | x > y    # False<br>x > z    # True                       |
-| <        |             | x < y    # True<br>x < z    # False                       |
-| >=       |             | x >= y    # False<br>x >= z    # True<br>y >= z    # True |
-| <=       |             | x <= y    # True<br>x <= z    # True<br>y <= z    # False |
+| **Operador** |                                                            **Descripción**                                                            | **Ejemplo**                                               |
+| :----------: | :-----------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------- |
+|      ==      |                    Devuelve **TRUE** si los valores de los operandos son iguales, <br>y **FALSE** de lo contrario.                    | x == y    # False<br>x == z    # True                     |
+|      !=      |                   Devuelve **TRUE** si los valores de los operandos no son iguales,<br>y **FALSE** de lo contrario.                   | x != y    # True<br>x != z    # False                     |
+|      >       |  Devuelve el **TRUE** si el valor del operando izquierdo es mayor<br>que el valor del operando derecho, y **FALSE** de lo contrario.  | x > y    # False<br>x > z    # True                       |
+|      <       |  Devuelve el **TRUE** si el valor del operando izquierdo es menor<br>que el valor del operando derecho, y **FALSE** de lo contrario.  | x < y    # True<br>x < z    # False                       |
+|      >=      | Devuelve **TRUE** si el valor del operando izquierdo es mayor o <br>igual al valor del operando derecho, y **FALSE** de lo contrario. | x >= y    # False<br>x >= z    # True<br>y >= z    # True |
+|      <=      | Devuelve **TRUE** si el valor del operando izquierdo es menor o <br>igual al valor del operando derecho, y **FALSE** de lo contrario. | x <= y    # True<br>x <= z    # True<br>y <= z    # False |
 
-1. Cuando deseas ejecutar algún código solo si se cumple una determinada condición, puedes usar una sentencia condicional:
+2. Cuando deseas ejecutar algún código solo si se cumple una determinada condición, puedes usar una sentencia condicional:
 
-   * Una única sentencia if, por ejemplo:
+   * **Una única sentencia if, por ejemplo:**
    	`x = 10`
 	 
 	`if x == 10: # condición`
 	    `print("x es igual a 10")  # Ejecutado si la condición es True.`
 
-   * Una serie de sentencias if, por ejemplo:
+   * **Una serie de sentencias if, por ejemplo:**
 	`x = 10`
 	 
 	`if x > 5: # primera condición`
@@ -28,11 +29,10 @@
 	    `print("x es menor que 10")  # Ejecutado si la segunda condición es True.`
 	 
 	`if x == 10: # tercera condición`
-    `print("x es igual a 10")  # Ejecutado si la tercera condición es True.`
- 
+	    `print("x es igual a 10")  # Ejecutado si la tercera condición es True.`
     Cada sentencia if se prueba por separado.
 
-   * Una sentencia if-else, por ejemplo:
+   * **Una sentencia if-else, por ejemplo:**
 	`x = 10`
 	 
 	`if x < 10: # condición`
@@ -41,7 +41,7 @@
 	`else:`
 	    `print("x es mayor o igual a 10")  # Ejecutado si la condición es False.`
  
-   * Una serie de sentencias if seguidas por un bloque else, por ejemplo:
+   * **Una serie de sentencias if seguidas por un bloque else, por ejemplo:**
 	 `x = 10`
 	 
 	`if x > 5: # primera condición`
@@ -52,11 +52,10 @@
 	 
 	`if x == 10: # tercera condición`
 	     `print("x es igual a 10")  # Ejecutado si la tercera condición es True.`
-
      Cada sentencia if se prueba por separado. El cuerpo del else es ejecutado si el último if es False.
 
-   * La sentencia if-elif-else, por ejemplo:
-   	`x = 10`
+   * **La sentencia if-elif-else, por ejemplo:**
+	`x = 10`
 	 
 	`if x == 10: # True`
 	    `print("x == 10")`
@@ -72,11 +71,9 @@
 	 
 	`else:`
 	    `print("else no será ejecutado")`
-
     Si la condición para if es False, el programa verifica las condiciones de los bloques elif posteriores: el primer elif que sea True es el que se ejecuta. Si todas las condiciones son False, se ejecutará el bloque else.
 
-   * Sentencias condicionales anidadas, ejemplo:
-
+   * **Sentencias condicionales anidadas, ejemplo:**
 	`x = 10`
 	 
 	`if x > 5: # True`

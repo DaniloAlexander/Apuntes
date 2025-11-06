@@ -37,4 +37,38 @@ El modelo de referencia entre redes más conocido fue creado por el proyecto OSI
 * **4 - Transporte** La capa de transporte define los servicios para segmentar, transferir y volver a ensamblar los datos para las comunicaciones individuales entre los dispositivos finales.
 * **3 - Red** La capa de red proporciona servicios para intercambiar datos individuales a través de la red entre dispositivos finales identificados. 
 * **2 - Enlace de datos** Los protocolos de la capa de enlace de datos describen métodos para intercambiar tramas de datos entre dispositivos a través de un medio común.
-* **1 - Físico** Los protocolos de la capa física describen los medios mecánicos, eléctricos, funcionales y de procedimiento para activar, mantener y desctivar conexiones físicas para la transmisión de bits y desde un dispositivo de red. 
+* **1 - Físico** Los protocolos de la capa física describen los medios mecánicos, eléctricos, funcionales y de procedimiento para activar, mantener y desactivar conexiones físicas para la transmisión de bits y desde un dispositivo de red. 
+## Medios de Red
+**Título del módulo:** Medios de red
+**Objetivo del módulo:** Describir los medios de red comunes
+
+| Título del tema           | Objetivo del Tema                             |
+| ------------------------- | --------------------------------------------- |
+| Tipos de Medios de<br>Red | Describir los tipos comunes de cables de red. |
+### Tipos de medios de red 
+La comunicación se transmite a través de una red en los medios. El medio proporciona el canal por el cual viaja el mensaje desde el origen hasta el destino. 
+Las redes modernas utilizan principalmente tres tipos de medios para interconectar dispositivos: 
++ **Hilos metálicos dentro de cables:** Los datos se codifican en impulsos eléctricos.
++ **Fibra de vidrio o plástico (cables de fibra óptica):** Los datos se codifican como pulsos de luz.
++ **Transmisión inalámbricas:** Los datos so codifican a través de la modulación de frecuencias especificas de ondas electromagnéticas. 
+Los cuatros criterios principales para elegir los medios son los siguientes: 
+* ¿Cuál es la distancia máxima en la que el medio puede transportar una señal exitosamente?
+* ¿Cuál es el entorno en el que se instalarán los medios?
+* ¿Cuál es la cantidad de datos y a qué velocidad se deben transmitir?
+* ¿Cuál es el costo de la instalación de los medios?
+Los tres cables de red más comunes son el cable coaxial, el cable de par trenzado y el cable de fibra óptica. La tecnología Ethernet generalmente usa cables de par trenzado para interconectar dispositivos. El cable coaxial es como es como los cables de cobre que utilizan la compañías de TV. También se utilizan para conectar los diversos componentes que forman los sistemas de comunicación satelitales. El cable de fibra óptica puede ser de vidrio o de plástico con un diámetro similar al de un cabello humano y puede transmitir información digital a velocidades muy rápidas a través de grandes distancias. Dado que usan luz en lugar de electricidad, la interferencia eléctrica no afecta la señal. 
+## La Capa de Acceso
+Título de módulo: Capa de Acceso
+Objetivo del módulo: Explicar cómo se produce la comunicación en las redes Ethernet.
+
+| Título del tema                         | Objetivos del tema                                                    |
+| --------------------------------------- | --------------------------------------------------------------------- |
+| Encapsulación y la<br>Trama de Ethernet | Explicar el proceso de encapsulación y la trama de Ethernet.          |
+| La Capa de Acceso                       | Explicar cómo mejorar la comunicación de la red en la capa de acceso. |
+### Encapsulación y la Trama de Ethernet
+El proceso que consiste en colocar un mensaje dentro de otro formato de mensaje se denomina encapsulamiento. Cuando el destinatario revierte este proceso y quita la carta del sobre se produce la desencapsulación del mensaje. De la misma manera en la que una carta se encapsula en un sobre para la entrega, los mensajes de las computadoras también deben encapsularse. Un mensaje que se envía a través de una red de computadoras sigue reglas de formato específicas para que pueda ser entregado y procesado. 
+Los estándares del protocolo Ethernet definen muchos aspectos de la comunicación de red, incluido el formato, el tamaño, la temporización y la codificación de las tramas. EL formato para las tramas de Ethernet especifica la ubicación de las direcciones MAC de origen y de destino, e información adicional, incluido el preámbulo para la secuencia y la temporización, el delimitador de inicio de trama, la longitud y el tipo de trama, y la secuencia de verificación de tramas para detectar errores de transmisión. 
+### La Capa de Acceso
+La capa de acceso es la parte de la red que permite a las personas obtener acceso a otros hosts y a archivos e impresoras compartidos. La capa de acceso proporciona la primera línea de dispositivos de red que conectan hosts a la red Ethernet cableada. dentro de una red Ethernet, cada hosts puede conectarse directamente a un dispositivo de red de capa de acceso mediante un cable Ethernet. Los concentradores Ethernet tienen varios puertos que se utilizan para conectar hosts a la red. Solo es posible enviar un mensaje a la vez a un  concentrador Ethernet. Dos o más mensajes enviados al mismo tiempo provocarán una colisión. Como el exceso de retransmisiones puede congestionar la red y reducir la velocidad del tráfico de red, ahora los concentradores se consideran obsoletos y fueron reemplazados por conmutadores Ethernet.  
+Un switch Ethernet es un dispositivo que se utiliza en la capa 2. Cuando un host envía un mensaje a otro host conectado a la misma red conmutada, el conmutador acepta y decodifica las trama para leer la parte de la dirección MAC del mensaje. Una tabla switch, llamada tabla de direcciones MAC, contiene una lista de todos los puertos activos y las direcciones MAC del host que se adjunta a ellos. Cuando se envía un mensaje entre hosts, el conmutador verifica si la dirección MAC de destino está en la tabla. Si está, el conmutador Ethernet también permiten enviar y recibir tramas a través del mismo cable Ethernet simultáneamente. Esto mejora el rendimiento de la red porque elimina las colisiones. 
+Para crear la tabla de direcciones MAC, los conmutadores examinan la dirección MAC de origen de cada trama que se envía entre los hosts. Cuando un host envía un mensaje o responde a un mensaje enviado por inundación, el conmutador inmediatamente aprende la dirección MAC de este host y el puerto al que está conectado. La tabla se actualiza de manera dinámica cada vez que el conmutador lee una nueva dirección MAC de origen. 
